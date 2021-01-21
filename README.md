@@ -7,7 +7,7 @@
 
 [soga 后端是一个同时支持 v2ray、Trojan、Shadowsocks 的后端，社区版最高支持88用户，优化了长时间运行的内存占用。](https://github.com/sprov065/soga)
 
-# 破解二进制文件下载地址：[release](https://github.com/RManLuo/crack-soga-v2ray/releases)
+# 破解二进制文件下载地址：[release](https://github.com/pockyyang/crack-soga-v2ray/releases)
 
 # 使用教程
 
@@ -22,7 +22,7 @@
 ## 简单安装
 
 ``` bash
-sudo bash < <(curl -Ls https://raw.githubusercontent.com/RManLuo/crack-soga-v2ray/master/install.sh)
+sudo bash < <(curl -Ls https://raw.githubusercontent.com/pockyyang/crack-soga-v2ray/master/install.sh)
 ```
 
 ## Docker安装
