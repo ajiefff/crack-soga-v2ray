@@ -170,9 +170,8 @@ install_soga() {
 get_sogaconf() {
      cd /etc/soga/
      rm  -rf soga.conf
-      wget -N --no-check-certificate -O /etc/soga/soga.conf https://github.com/pockyyang/crack-soga-v2ray/releases/download/${last_version}/soga-cracked-linux64.tar.gz
-     
-     
+     wget -N --no-check-certificate -O /etc/soga/soga.conf https://raw.githubusercontent.com/pockyyang/crack-soga-v2ray/master/soga.conf
+     soga restart 
 }
 
 
@@ -180,4 +179,5 @@ echo -e "${green}开始安装${plain}"
 install_base
 install_acme
 install_soga $1
+get_sogaconf
 
