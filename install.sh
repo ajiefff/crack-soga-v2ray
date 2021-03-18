@@ -62,8 +62,17 @@ install_base() {
     if [[ x"${release}" == x"centos" ]]; then
         yum install epel-release -y
         yum install wget curl tar crontabs socat -y
+        yum install -y ntp
+        systemctl enable ntpd
+        ntpdate -q 0.rhel.pool.ntp.org
+        systemctl restart ntpd
+        yum install haproxy -y
     else
         apt install wget curl tar cron socat -y
+        apt-get install -y ntp
+        systemctl enable ntp
+        systemctl restart ntp
+        apt install haproxy -y
     fi
 }
 
