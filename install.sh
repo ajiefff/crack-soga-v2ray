@@ -66,13 +66,20 @@ install_base() {
         systemctl enable ntpd
         ntpdate -q 0.rhel.pool.ntp.org
         systemctl restart ntpd
+        
         yum install haproxy -y
+        systemctl restart haproxy
+        # 设置开机自启
+        systemctl enable haproxy
     else
         apt install wget curl tar cron socat -y
         apt-get install -y ntp
         systemctl enable ntp
         systemctl restart ntp
         apt install haproxy -y
+        systemctl restart haproxy
+        # 设置开机自启
+        systemctl enable haproxy
     fi
 }
 
