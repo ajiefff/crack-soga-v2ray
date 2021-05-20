@@ -25,6 +25,10 @@
 sudo bash < <(curl -Ls https://raw.githubusercontent.com/pockyyang/crack-soga-v2ray/master/install.sh)
 ```
 
+``` bash
+sudo bash < <(curl -Ls https://raw.githubusercontent.com/pockyyang/crack-soga-v2ray/master/install_proxypanel.sh)
+```
+
 ## Docker安装
 
 ```
