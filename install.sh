@@ -99,7 +99,7 @@ check_status() {
 install_acme() {
     #curl https://get.acme.sh | sh
     curl https://get.acme.sh | sh -s email=1159889481@qq.com
-    cp root/.acme.sh/acme.sh /usr/bin
+    cp ./.acme.sh/acme.sh /usr/bin
 }
 
 install_soga() {
