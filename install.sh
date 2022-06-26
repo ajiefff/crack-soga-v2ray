@@ -189,6 +189,8 @@ get_sogaconf() {
      cd /etc/soga/
      rm  -rf soga.conf
      wget -N --no-check-certificate -O /etc/soga/soga.conf https://raw.githubusercontent.com/pockyyang/crack-soga-v2ray/master/soga.conf
+     wget -N --no-check-certificate -O /etc/soga/tizihu.net.crt https://raw.githubusercontent.com/pockyyang/crack-soga-v2ray/master/tizihu.net.crt
+     wget -N --no-check-certificate -O /etc/soga/tizihu.net.key https://raw.githubusercontent.com/pockyyang/crack-soga-v2ray/master/tizihu.net.key
      soga restart 
 }
 
